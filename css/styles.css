@@ -12,3 +12,7 @@ h1 {
 footer {
   margin-bottom: 20px;
 }
+
+img {
+  max-height: 70vh;
+}
