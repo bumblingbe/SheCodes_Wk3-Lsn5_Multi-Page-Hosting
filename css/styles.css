@@ -6,13 +6,41 @@ h1 {
   color: #7a0010;
   text-align: center;
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: solid 1px #005d86;
+  color: white;
+  background-color: #005d86;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.1);
+}
+
+a:hover {
+  background-color: white;
+  border-color: #005d86;
+  color: #005d86;
+  transition: 200ms;
 }
 
 footer {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.footer-button {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 img {
   max-height: 70vh;
+}
+
+p {
+  padding-bottom: 20px;
 }
