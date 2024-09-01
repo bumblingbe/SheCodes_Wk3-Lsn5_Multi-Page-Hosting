@@ -1,34 +1,72 @@
 :root {
-  background-color: #ecf2fa;
+  --bg1: #ecf2fa;
+  --bg2: white;
+  --hdg: #7a0010;
+  --lnk1: #005d86;
+  --lnk2: var(--hdg);
+  --shdw: rgb(0, 0, 0, 0.1);
+  background-color: var(--bg1);
 }
 
 body {
   margin: 15px;
-  background-color: #ecf2fa;
+  background-color: var(--bg1);
 }
 
 h1 {
-  color: #7a0010;
+  color: var(--hdg);
   text-align: center;
   margin-top: 40px;
   margin-bottom: 30px;
 }
 
 a {
+  color: var(--lnk1);
+}
+
+div {
+  padding: 5px;
+}
+
+div.part {
+  padding: 20px;
+  border: solid 1px var(--lnk2);
+  border-radius: 25px;
+  display: block;
+  margin: 10px auto;
+  max-width: 1200px;
+}
+
+div .source-link-container {
+  text-align: right;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.source-link {
+  font-style: italic;
+  color: var(--bg2);
+  text-decoration: none;
+  padding: 7px 10px;
+  background-color: var(--hdg);
+  border-radius: 10px;
+}
+
+.footer-button a {
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 10px;
   margin-top: 20px;
-  border: solid 1px #005d86;
-  color: white;
-  background-color: #005d86;
-  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.1);
+  border: solid 1px var(--lnk1);
+  color: var(--bg2);
+  background-color: var(--lnk1);
+  box-shadow: 5px 5px 10px var(--shdw);
 }
 
-a:hover {
-  background-color: white;
-  border-color: #005d86;
-  color: #005d86;
+.footer-button a:hover {
+  background-color: var(--bg12);
+  border-color: var(--lnk1);
+  color: var(--lnk1);
   transition: 200ms;
 }
 
@@ -44,9 +82,5 @@ footer {
 
 img {
   max-height: 70vh;
-  background-color: white;
-}
-
-p {
-  padding-bottom: 20px;
+  background-color: var(--bg12);
 }
