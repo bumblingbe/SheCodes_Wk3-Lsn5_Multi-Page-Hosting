@@ -1,5 +1,10 @@
+:root {
+  background-color: #ecf2fa;
+}
+
 body {
   margin: 15px;
+  background-color: #ecf2fa;
 }
 
 h1 {
@@ -39,6 +44,7 @@ footer {
 
 img {
   max-height: 70vh;
+  background-color: white;
 }
 
 p {
